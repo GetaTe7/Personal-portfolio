@@ -1,0 +1,21 @@
+@import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base color variables to help pages respond when .dark is toggled on html or body */
+:root {
+  --page-bg: #ffffff;
+  --page-text: #0f172a; /* slate-900 */
+}
+
+.dark {
+  --page-bg: #0b1220; /* near gray-900 */
+  --page-text: #f8fafc; /* gray-50 */
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--page-text);
+  transition: background-color 200ms ease, color 200ms ease;
+}
